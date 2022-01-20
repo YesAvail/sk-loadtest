@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: locust-worker
+spec:
+  selector:
+    matchLabels:
+      app: locust-worker
+  template:
+    metadata:
+      labels:
+        app: locust-worker
+    spec:
+      containers:
+      - name: locust-worker
+        image: <Dockerfile.w image here>
+        resources:
+          limits:
+            memory: "128Mi"
+            cpu: "500m"
