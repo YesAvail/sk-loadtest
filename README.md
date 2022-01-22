@@ -15,6 +15,8 @@ __*Use below commands (Works in ubuntu env)*__
 
 ` cd sk-loadtest/setup/ `
 
+` chmod 764 locust-setup.sh `
+
 ` sudo ./locust-setup.sh `
 
 **After all the installation is done** use one of the below command: 
